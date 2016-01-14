@@ -1,0 +1,55 @@
+<script type='text/javascript'>
+     $(function() {
+        Dashing.widget_base_dimensions = [370, 340]
+        Dashing.numColumns = 5;
+        // Dashing.cycleDashboards({timeInSeconds: 15, stagger: true});
+     });
+</script>
+
+<% content_for :title do %>Lantern Dashboard<% end %>
+<div class="gridster">
+    <div class="logo">
+        <img src="/assets/lantern.png" />
+    </div>
+    <ul>
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+           <div data-view="MartJob" data-id="MART_JOB" id="mart_job" data-title="Mart Job Status" ></div>
+        </li>
+        <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+           <div data-view="Clock"></div>
+        </li>
+        <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+           <div data-view="LanternDataIngest" data-id="LANTERN_DATA_INGEST" id="lantern_data_ingest" data-title="Last Ingest"></div>
+        </li>
+        <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+          <div data-view="Newrelic" data-id="newrelic_Error_Rate" id="newrelic_Error_Rate" data-title="Error rate" data-green="1" data-yellow="3"></div>
+        </li>
+        <li data-row="1" data-col="4" data-sizex="1" data-sizey="2">
+           <div data-view="CircleCiList" data-id="CIRCLE_CI_BUILDS" id="circle_ci" data-title="Circle Ci"></div>
+        </li>
+        <li data-row="1" data-col="5" data-sizex="1" data-sizey="2">
+          <div data-view="PullRequests" data-id="PR_WIDGET_DATA_ID" id="pull_requests" data-title="Open Pull Requests"></div>
+        </li>
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+          <div data-view="Newrelic" data-id="newrelic_Response_Time" id="newrelic_Response_Time" data-title="Response time" data-green="200" data-yellow="500" ></div>
+        </li>
+    </ul>
+</div>
+
+<!--
+<div class="gridster">
+    <div class="logo">
+        <h1>Nightingale</h1>
+    </div>
+    <ul>
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-view="Clock"></div>
+        </li>
+    </ul>
+</div>
+-->
+
+<!-- 
+<div data-view="Meter" data-id="HEROKU_DYNO_web" data-title="Web Dynos" data-min="0" data-max="10"></div> 
+<div data-id="HEROKU_DYNO_worker" data-view="Meter" data-title="Workers" data-min="0" data-max="10"></div>
+-->

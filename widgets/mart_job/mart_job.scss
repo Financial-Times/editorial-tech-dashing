@@ -1,0 +1,53 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color: #432E36;
+
+$pass-color: #218380;
+$fail-color: #E07A5F;
+$else-color: #B483C5;
+
+$title-color: rgba(255, 255, 255, 0.7);
+$label-color: rgba(255, 255, 255, 0.7);
+$moreinfo-color: rgba(255, 255, 255, 0.7);
+$updated-color: rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-pull-requests styles
+// ----------------------------------------------------------------------------
+.widget.widget-mart-job {
+    background-color: $background-color;
+    vertical-align: top;
+    li {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    span {
+        text-transform: capitalize;
+    }
+    .name {
+        display: block;
+    }
+    .title {
+        color: $title-color;
+    }
+    .label {
+        color: $label-color;
+    }
+    .items {
+        list-style: none;
+        text-align: left;
+        li {
+            margin-top: 5px;
+            &.down {
+                background-color: $fail-color;
+            }
+            &.up {
+                background-color: $pass-color;
+            }
+        }
+    }
+    .updated-at {
+        color: $updated-color;
+    }
+}

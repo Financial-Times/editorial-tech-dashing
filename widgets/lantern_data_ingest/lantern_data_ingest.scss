@@ -1,0 +1,29 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #06D6A0;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+$updated-color: rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+.widget-lantern-data-ingest {
+
+  background-color: $background-color;
+
+  .title {
+    color: $title-color;
+  }
+
+  .metric {
+    color: $moreinfo-color;
+  }
+
+  .updated-at {
+    color: $updated-color;
+  }
+
+}

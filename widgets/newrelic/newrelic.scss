@@ -1,0 +1,41 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #7F8C8D;
+
+$title-color:       rgba(255, 255, 255, 1.0);
+$moreinfo-color:    rgba(255, 255, 255, 1.0);
+$updated-color: rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+.widget.widget-newrelic {
+  vertical-align: top;
+}
+.widget-newrelic {
+    
+  background-color: $background-color;
+
+  h1 {
+    margin-bottom: 0;
+  }
+    
+  .newrelic-graph {
+    position: absolute;
+    top: 170px;
+    left: 0;
+  }
+
+  .title {
+    color: $title-color;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+  .updated-at {
+    color: $updated-color;
+  }
+}

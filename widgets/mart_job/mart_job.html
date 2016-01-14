@@ -1,0 +1,12 @@
+<h1 class="title" data-bind="title"></h1>
+
+<ul class="items list-nostyle">
+    <li class="item" data-foreach-item="items" data-bind-class="item.status | downcase">
+        <span class="label name" data-bind="item.name | humanize"></span>
+        <span data-showif="item.dashboardStatus" class="label status" data-bind="item.dashboardStatus | humanize"></span>
+        <span data-showif="item.dashboardStatus">•</span>
+        <span data-showif="item.lateness" class="label late" data-bind="item.lateness"></span>
+    </li>
+</ul>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>
