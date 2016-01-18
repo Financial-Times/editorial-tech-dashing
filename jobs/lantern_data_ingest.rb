@@ -6,6 +6,7 @@ SCHEDULER.every '1m', :first_in => 0, :allow_overlapping => false, :timeout => '
     
     response =  HTTParty.get(url, :headers => { "Accept" => "application/json" } )
     json_response = JSON.parse(response.body)
-
+    json_response = json_response['historical']
+    
     send_event('LANTERN_DATA_INGEST', { metric: json_response['latestIndex'] })
 end
