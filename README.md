@@ -11,5 +11,6 @@ To run locally perform the following set up steps
   - CIRCLE_CI_AUTH_TOKEN
   - NEWRELIC_API_KEY
   - NEWRELIC_APP_NAME
+  - LANTERN_URL
 3. bundle install
 4. dashing start
