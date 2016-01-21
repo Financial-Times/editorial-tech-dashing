@@ -16,7 +16,7 @@ def update_builds(project, auth_token)
   api_json = JSON.parse(api_response.body)
   return {} if api_json.empty?
     
-  latest_builds = api_json.select{ |build| build['status'] != 'queued' }.first(7)
+  latest_builds = api_json.select{ |build| build['status'] != 'queued' }.first(12)
   data = Array.new;
     
   latest_builds.each do |build|
