@@ -254,7 +254,17 @@ h3 {
 // ----------------------------------------------------------------------------
 // Ed Tech Custom Styles
 // ----------------------------------------------------------------------------
+body {
+    overflow: hidden
+}
 #container {
+    height: 100vh;
+    margin: 0 auto;
+    display: table;
+    .gridster {
+        display: table-cell;
+        vertical-align: middle
+    }
     h1, h2 {
         width: 100%;
     }
