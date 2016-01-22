@@ -16,6 +16,12 @@ $updated-color: rgba(255, 255, 255, 0.7);
 // ----------------------------------------------------------------------------
 // Widget-pull-requests styles
 // ----------------------------------------------------------------------------
+
+[data-sizey="2"] .widget.widget-pull-requests ul {
+    overflow: hidden;
+    height: 575px;
+}
+
 .widget.widget-pull-requests {
     background-color: $background-color;
     vertical-align: top;
@@ -27,9 +33,6 @@ $updated-color: rgba(255, 255, 255, 0.7);
     }
     .title {
 
-    }
-    .pull_info {
-        line-height: 60%;
     }
     ol,
     ul {

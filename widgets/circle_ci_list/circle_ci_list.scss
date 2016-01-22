@@ -15,6 +15,11 @@ $updated-color: rgba(255, 255, 255, 0.7);
 // ----------------------------------------------------------------------------
 // Widget-pull-requests styles
 // ----------------------------------------------------------------------------
+[data-sizey="3"] .widget.widget-circle-ci-list ul {
+    overflow: hidden;
+    height: 930px;
+}
+
 .widget.widget-circle-ci-list {
     background-color: $background-color;
     vertical-align: top;
