@@ -2,13 +2,13 @@
 
 <ul class="list">
     <li data-foreach-pull="pulls">
-        <p class="title" data-bind="pull.title"></p>
+        <p class="label" data-bind="pull.title | humanize"></p>
         <div class="pull_info">
-            <span class="repo" data-bind="pull.repo"></span>
+            <span class="repo" data-bind="pull.repo | humanize"></span>
             <span>•</span>
-            <span class="creator" data-bind="pull.creator"></span>
+            <span class="creator" data-bind="pull.creator | humanize"></span>
             <span>•</span>
-            <span class="updated_at" data-bind="pull.updated_at"></span>
+            <span class="updated_at" data-bind="pull.updated_at | humanize"></span>
         </div>
     </li>
 </ul>

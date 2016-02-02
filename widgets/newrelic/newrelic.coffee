@@ -5,7 +5,7 @@ class Dashing.Newrelic extends Dashing.Widget
     @graph = new Rickshaw.Graph(
       element: document.querySelector("#" + this.id + " .newrelic-graph")
       renderer: 'area'
-      height: 170
+      height: 210
       width: 300
       series: [
         {
