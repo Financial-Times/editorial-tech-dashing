@@ -8,7 +8,7 @@ SCHEDULER.every '1m', :first_in => 0, :allow_overlapping => false, :timeout => '
     json_response = JSON.parse(response.body)
     json_response = json_response['historical']
 
-    date = DateTime.strptime(json_response['latestIndex'], "%Y-%m-%d")
+    date = DateTime.strptime(json_response['latestEvent'], "%Y-%m-%d")
     formattedDate = date.strftime("%d-%m-%Y")
 
     send_event('LANTERN_DATA_HIST_INGEST', { metric: formattedDate, type: 'historical' })
