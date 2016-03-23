@@ -20,6 +20,11 @@ $updated-color: rgba(255, 255, 255, 0.7);
     height: 930px;
 }
 
+[data-sizey="2"] .widget.widget-circle-ci-list ul {
+    overflow: hidden;
+    height: 575px;
+}
+
 .widget.widget-circle-ci-list {
     background-color: $background-color;
     vertical-align: top;
