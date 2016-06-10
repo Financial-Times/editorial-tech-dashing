@@ -4,10 +4,10 @@ require 'json'
 SCHEDULER.every '1m', :first_in => 0, :allow_overlapping => false, :timeout => '59s' do |job|
     
    data = Array.new;
-   urls = ['http://52.31.225.195/process-new-pages',
-           'http://52.31.225.195/articlemetadata-cdc',
-           'http://52.31.225.195/article-insights',
-           'http://52.31.225.195/unload-trigger']
+   urls = ['http://52.50.35.34/process-new-pages',
+           'http://52.50.35.34/articlemetadata-cdc',
+           'http://52.50.35.34/article-insights',
+           'http://52.50.35.34/unload-trigger']
     
    urls.each do |url|   
       name = (url.split('/')[-1]) 
